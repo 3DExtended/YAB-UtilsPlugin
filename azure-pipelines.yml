@@ -51,15 +51,13 @@ steps:
     ArtifactName: 'drop-$(Build.BuildId)'
     publishLocation: 'Container'
 
-
-
 - task: GitHubRelease@1
   inputs:
     gitHubConnection: 'github.com_3DExtended'
     repositoryName: '3DExtended/YAB-UtilsPlugin'
     action: 'create'
     target: '$(Build.SourceVersion)'
-    tagSource: 'userSpecifiedTag'
-    tag: 'latest'
+    tagSource: 'gitTag'
+    tagPattern: 'release'
     changeLogCompareToRelease: 'lastFullRelease'
     changeLogType: 'commitBased'
