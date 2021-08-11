@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilsPlugin", "UtilsPlugin\UtilsPlugin.csproj", "{7175A373-0285-44FA-8A7E-FB8B4AE91BD9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YAB.Core", "framework\yetanotherbot\src\libraries\YAB.Core\YAB.Core.csproj", "{B3643984-9F19-4E1D-A584-C236D468499F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YAB.Plugins", "framework\yetanotherbot\src\libraries\YAB.Plugins\YAB.Plugins.csproj", "{1F1C2295-E597-4004-905B-951C4238B72F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YAB.Plugins.Injectables", "framework\yetanotherbot\src\libraries\YAB.Plugins.Injectables\YAB.Plugins.Injectables.csproj", "{F93F7621-16A9-4A43-A184-09116B63F90F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YAB.Services.Common", "framework\yetanotherbot\src\libraries\YAB.Services.Common\YAB.Services.Common.csproj", "{94A1698B-5572-490A-A704-E523778865BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "extern", "extern", "{6BCE0D04-4CDD-4D2D-A181-66EE2F8DF921}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7175A373-0285-44FA-8A7E-FB8B4AE91BD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7175A373-0285-44FA-8A7E-FB8B4AE91BD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7175A373-0285-44FA-8A7E-FB8B4AE91BD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7175A373-0285-44FA-8A7E-FB8B4AE91BD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3643984-9F19-4E1D-A584-C236D468499F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3643984-9F19-4E1D-A584-C236D468499F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3643984-9F19-4E1D-A584-C236D468499F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3643984-9F19-4E1D-A584-C236D468499F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F1C2295-E597-4004-905B-951C4238B72F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F1C2295-E597-4004-905B-951C4238B72F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F1C2295-E597-4004-905B-951C4238B72F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F1C2295-E597-4004-905B-951C4238B72F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F93F7621-16A9-4A43-A184-09116B63F90F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F93F7621-16A9-4A43-A184-09116B63F90F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F93F7621-16A9-4A43-A184-09116B63F90F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F93F7621-16A9-4A43-A184-09116B63F90F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94A1698B-5572-490A-A704-E523778865BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94A1698B-5572-490A-A704-E523778865BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94A1698B-5572-490A-A704-E523778865BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94A1698B-5572-490A-A704-E523778865BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B3643984-9F19-4E1D-A584-C236D468499F} = {6BCE0D04-4CDD-4D2D-A181-66EE2F8DF921}
+		{1F1C2295-E597-4004-905B-951C4238B72F} = {6BCE0D04-4CDD-4D2D-A181-66EE2F8DF921}
+		{F93F7621-16A9-4A43-A184-09116B63F90F} = {6BCE0D04-4CDD-4D2D-A181-66EE2F8DF921}
+		{94A1698B-5572-490A-A704-E523778865BD} = {6BCE0D04-4CDD-4D2D-A181-66EE2F8DF921}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {126624B3-C798-405F-A6A0-8749E50E4649}
+	EndGlobalSection
+EndGlobal
