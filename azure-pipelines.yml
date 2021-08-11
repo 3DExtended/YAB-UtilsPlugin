@@ -25,3 +25,22 @@ steps:
     projects: '**/*.csproj'
     feedsToUse: 'select'
     noCache: true
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: './UtilsPlugin/UtilsPlugin.csproj'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: false
+    projects: './UtilsPlugin/UtilsPlugin.csproj'
+    arguments: '-o $(Build.BinariesDirectory)'
+
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(Build.BinariesDirectory)'
+    includeRootFolder: true
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    replaceExistingArchive: true
