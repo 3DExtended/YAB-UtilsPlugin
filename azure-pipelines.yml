@@ -51,6 +51,8 @@ steps:
     ArtifactName: 'drop-$(Build.BuildId)'
     publishLocation: 'Container'
 
+
+
 - task: GitHubRelease@1
   inputs:
     gitHubConnection: 'github.com_3DExtended'
