@@ -16,8 +16,9 @@ variables:
 
 steps:
 - checkout: self
-  submodules: true
-  
+  submodules: recursive  
+  persistCredentials: true
+
 - task: DotNetCoreCLI@2
   inputs:
     command: 'restore'
