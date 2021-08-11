@@ -36,6 +36,8 @@ steps:
     publishWebProjects: false
     projects: './UtilsPlugin/UtilsPlugin.csproj'
     arguments: '-o $(Build.BinariesDirectory)'
+  
+
 
 - task: ArchiveFiles@2
   inputs:
@@ -44,3 +46,10 @@ steps:
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     replaceExistingArchive: true
+
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop-$(Build.BuildId)'
+    publishLocation: 'Container'
