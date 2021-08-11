@@ -20,17 +20,20 @@ steps:
   persistCredentials: true
 
 - task: DotNetCoreCLI@2
+  displayName: Restore Project and Submodules
   inputs:
     command: 'restore'
     projects: '**/*.csproj'
     feedsToUse: 'select'
     noCache: true
 - task: DotNetCoreCLI@2
+  displayName: Build Project
   inputs:
     command: 'build'
     projects: './UtilsPlugin/UtilsPlugin.csproj'
 
 - task: DotNetCoreCLI@2
+  displayName: Publish project
   inputs:
     command: 'publish'
     publishWebProjects: false
