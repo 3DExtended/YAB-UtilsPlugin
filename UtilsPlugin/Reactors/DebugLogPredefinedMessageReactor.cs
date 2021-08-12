@@ -19,7 +19,7 @@ namespace UtilsPlugin.Reactors
 
         public Task RunAsync(DebugLogPredefinedMessageReactorConfiguration config, EventBase evt, CancellationToken cancellationToken)
         {
-            this._logger.LogDebug(config.DebugMessage);
+            _logger.LogInformation(config.DebugMessage);
             return Task.CompletedTask;
         }
     }
