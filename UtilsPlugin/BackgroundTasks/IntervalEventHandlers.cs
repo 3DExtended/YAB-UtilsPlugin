@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 
 using UtilsPlugin.Events;
@@ -33,14 +34,20 @@ namespace UtilsPlugin.BackgroundTasks
                 if (secondsCounter % 60 == 0) // every minute
                 {
                     await _eventSender
-                        .SendEvent(new OneMinuteIntervalEvent(), cancellationToken)
+                        .SendEvent(new OneMinuteIntervalEvent
+                        {
+                            MinuteOfHour = DateTime.UtcNow.Minute
+                        }, cancellationToken)
                         .ConfigureAwait(false);
                 }
 
                 if (secondsCounter % (60 * 60) == 0) // every hour
                 {
                     await _eventSender
-                        .SendEvent(new OneHourIntervalEvent(), cancellationToken)
+                        .SendEvent(new OneHourIntervalEvent
+                        {
+                            HourOfDay = DateTime.UtcNow.Hour
+                        }, cancellationToken)
                         .ConfigureAwait(false);
                 }
             }
