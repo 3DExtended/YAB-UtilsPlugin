@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="RestSharp" Version="106.13.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\framework\yetanotherbot\src\libraries\YAB.Core\YAB.Core.csproj" />
     <ProjectReference Include="..\framework\yetanotherbot\src\libraries\YAB.Plugins.Injectables\YAB.Plugins.Injectables.csproj" />
     <ProjectReference Include="..\framework\yetanotherbot\src\libraries\YAB.Plugins\YAB.Plugins.csproj" />
