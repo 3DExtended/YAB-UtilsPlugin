@@ -15,5 +15,8 @@ namespace UtilsPlugin.Reactors
 
         [PropertyDescription(false, "The URL where the request should go to (including \"https://\" or \"http://\")")]
         public string Url { get; set; }
+
+        [PropertyDescription(false, "The request is made after this amound of seconds")]
+        public int? DelayTaskForSeconds { get ; set ; }
     }
 }

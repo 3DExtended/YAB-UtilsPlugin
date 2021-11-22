@@ -12,5 +12,8 @@ namespace UtilsPlugin.Reactors
         /// </summary>
         [PropertyDescription(false, "The message you want to log.")]
         public string DebugMessage { get; set; }
+
+        [PropertyDescription(false, "The message will be logged after this amount of seconds.")]
+        public int? DelayTaskForSeconds { get; set; }
     }
 }
