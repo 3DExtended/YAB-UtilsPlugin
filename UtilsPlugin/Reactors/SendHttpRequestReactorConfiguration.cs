@@ -1,10 +1,11 @@
-﻿using YAB.Core.EventReactor;
+﻿using YAB.Core.Annotations;
+using YAB.Core.EventReactor;
 using YAB.Core.Events;
 using YAB.Plugins.Injectables.Options;
 
 namespace UtilsPlugin.Reactors
 {
-    [ReactorConfigurationDescription("Will send a request to the URL specified. You can also provide additional headers using a json format.")]
+    [ClassDescription("Will send a request to the URL specified. You can also provide additional headers using a json format.")]
     public class SendHttpRequestReactorConfiguration : IEventReactorConfiguration<SendHttpRequestReactor, EventBase>
     {
         [PropertyDescription(false, "Either Post, Get or Put")]

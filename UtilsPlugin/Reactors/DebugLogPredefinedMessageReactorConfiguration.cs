@@ -1,10 +1,11 @@
-﻿using YAB.Core.EventReactor;
+﻿using YAB.Core.Annotations;
+using YAB.Core.EventReactor;
 using YAB.Core.Events;
 using YAB.Plugins.Injectables.Options;
 
 namespace UtilsPlugin.Reactors
 {
-    [ReactorConfigurationDescription("Will send a debug message.")]
+    [ClassDescription("Will send a debug message.")]
     public class DebugLogPredefinedMessageReactorConfiguration : IEventReactorConfiguration<DebugLogPredefinedMessageReactor, EventBase>
     {
         /// <summary>
